@@ -2,9 +2,19 @@
 
 Landing page feita para a primeira Noite Italiana do Espetinho Jucá's, restaurante no Capão da Imbuia, em Curitiba.
 
-O restaurante não tinha site. Divulgava tudo pelo WhatsApp. Essa página resolve isso.
+O dono não tinha site. Divulgava tudo pelo WhatsApp. Essa página resolve isso.
 
 **[Ver ao vivo](https://noite-italiana-jucas.vercel.app/)**
+
+---
+
+## Preview
+
+![Desktop](assets/preview-desktop.png)
+
+| Tablet                               | Mobile                               |
+| ------------------------------------ | ------------------------------------ |
+| ![Tablet](assets/preview-tablet.png) | ![Mobile](assets/preview-mobile.png) |
 
 ---
 
@@ -42,6 +52,10 @@ Culinária italiana com pratos feitos na hora, sobremesas tradicionais e músico
 ```
 noite-italiana-jucas/
 ├── index.html
+├── assets/
+│   ├── preview-desktop.png
+│   ├── preview-tablet.png
+│   └── preview-mobile.png
 ├── css/
 │   └── style.css
 └── README.md
