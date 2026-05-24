@@ -1,0 +1,376 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --verde: #1a3a2a;
+  --verde-medio: #2d5a3d;
+  --dourado: #c9a84c;
+  --dourado-claro: #e8d5a3;
+  --creme: #faf6ef;
+  --vermelho: #8b1a1a;
+  --texto: #2c1810;
+  --texto-claro: #6b4c3b;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--creme);
+  color: var(--texto);
+  overflow-x: hidden;
+}
+
+.hero {
+  background-color: var(--verde);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(139, 26, 26, 0.2) 0%, transparent 50%);
+  padding: 56px 24px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(201, 168, 76, 0.04) 40px, rgba(201, 168, 76, 0.04) 41px);
+}
+
+.flag {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.flag span {
+  width: 40px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.flag .green {
+  background: #009246;
+}
+.flag .white {
+  background: #ffffff;
+}
+.flag .red {
+  background: #ce2b37;
+}
+
+.hero-tag {
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--dourado);
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 10vw, 88px);
+  font-weight: 700;
+  color: var(--creme);
+  line-height: 1.05;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+.hero-subtitle {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: clamp(15px, 3vw, 20px);
+  color: rgba(250, 246, 239, 0.65);
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.hero-info {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.hero-info-item {
+  text-align: center;
+}
+
+.hero-info-item .label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dourado);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hero-info-item .value {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: var(--creme);
+}
+
+.hero-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(201, 168, 76, 0.3);
+  align-self: center;
+}
+
+.btn-booking {
+  position: relative;
+  display: inline-block;
+  background: var(--dourado);
+  color: var(--verde);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  text-decoration: none;
+  border: 2px solid var(--dourado);
+  transition: all 0.3s ease;
+}
+
+.btn-booking:hover {
+  background: transparent;
+  color: var(--dourado);
+}
+
+.btn-booking-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--dourado);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  text-decoration: none;
+  border: 2px solid var(--dourado);
+  transition: all 0.3s ease;
+}
+
+.btn-booking-outline:hover {
+  background: var(--dourado);
+  color: var(--verde);
+}
+
+.btn-artist {
+  display: inline-block;
+  background: var(--verde);
+  color: var(--creme);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-artist:hover {
+  background: var(--verde-medio);
+}
+
+section {
+  padding: 64px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--dourado);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(28px, 5vw, 42px);
+  text-align: center;
+  color: var(--verde);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--vermelho);
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--dourado);
+  margin: 0 auto 48px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.menu-category {
+  background: white;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-top: 3px solid var(--dourado);
+  padding: 28px 24px;
+}
+
+.category-title {
+  font-family: "Playfair Display", serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dourado);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(201, 168, 76, 0.2);
+}
+
+.dish {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+}
+
+.dish:last-child {
+  border-bottom: none;
+}
+
+.dish-name {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  color: var(--texto);
+  margin-bottom: 2px;
+}
+
+.dish-description {
+  font-size: 12px;
+  color: var(--texto-claro);
+  font-style: italic;
+}
+
+.price-box {
+  background: var(--verde);
+  background-image: radial-gradient(ellipse at 30% 50%, rgba(201, 168, 76, 0.1) 0%, transparent 60%);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.price-box .section-label {
+  color: var(--dourado-claro);
+}
+
+.price-value {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  color: var(--dourado);
+  line-height: 1;
+  margin: 12px 0 4px;
+}
+
+.price-per-person {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(250, 246, 239, 0.5);
+  margin-bottom: 6px;
+}
+
+.price-description {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: rgba(250, 246, 239, 0.6);
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.artists-box {
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 40px;
+  text-align: center;
+}
+
+.artists-icon {
+  font-size: 40px;
+  margin-bottom: 14px;
+}
+
+.artists-box p {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--texto-claro);
+  max-width: 500px;
+  margin: 0 auto 24px;
+  line-height: 1.7;
+}
+
+footer {
+  background: var(--texto);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: var(--creme);
+  margin-bottom: 8px;
+}
+
+.footer-logo em {
+  font-style: italic;
+  color: var(--dourado);
+}
+
+footer p {
+  font-size: 13px;
+  color: rgba(250, 246, 239, 0.4);
+  margin-bottom: 4px;
+}
+
+.footer-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--dourado);
+  margin: 16px auto;
+}
