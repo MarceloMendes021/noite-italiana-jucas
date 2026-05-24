@@ -14,9 +14,9 @@ O restaurante não possui site e divulgava tudo pelo WhatsApp atualmente. Essa p
 
 <br/>
 
-| Tablet                                                                        | Mobile                                                                         |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| <img src="assets/preview-tablet.png" style="vertical-align:top" alt="Tablet"> | <img src="assets/preview-mobile.png"  style="vertical-align:top" alt="Mobile"> |
+| Tablet                                                                  | Mobile                                                                  |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| <td align="top"><img src="assets/preview-tablet.png" alt="Tablet"></td> | <td align="top"><img src="assets/preview-mobile.png" alt="Mobile"></td> |
 
 ---
 
