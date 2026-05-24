@@ -14,10 +14,12 @@ O restaurante não possui site e divulgava tudo pelo WhatsApp atualmente. Essa p
 
 <br/>
 
-<div>
-  <img src="assets/preview-tablet.png" width="48%" style="vertical-align:top" alt="Tablet">
-  <img src="assets/preview-mobile.png" width="48%" style="vertical-align:top" alt="Mobile">
-</div>
+<table>
+  <tr>
+    <td valign="top"><img src="assets/preview-tablet.png" width="100%" alt="Tablet"></td>
+    <td valign="top"><img src="assets/preview-mobile.png" width="100%" alt="Mobile"></td>
+  </tr>
+</table>
 
 ---
 
